@@ -63,8 +63,6 @@ services:
       replicas: 0
   db:
     image: postgres:14-alpine
-    volumes:
-      - db_data:/var/lib/postgresql/data/pgdata
     environment:
       PGDATA: /var/lib/postgresql/data/pgdata
       POSTGRES_USER: vapor_username
